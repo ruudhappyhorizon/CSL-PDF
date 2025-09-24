@@ -590,7 +590,7 @@ function initPageSwipe(){
 	});
 }
 
-$(function(){
+$(function(){ $('body').addClass('no-scroll');
 	if(webAppType.length && initWebApp()) return !1;
 	$(document).on('newPage', function(e, data) { onNewPage(e, data); });
 	if(!multifile && pageMode.substr(0,2) === 'cs') $(document).on('scroll', function(e){ if (isFullscreen()){return;} checkScroll(e, pageMode.substr(2,1)); });
