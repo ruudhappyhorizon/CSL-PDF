@@ -1914,3 +1914,7 @@ body, #container-wrap { background:#ededed; }
 	top:196px !important;
 	background:#e5f7f4;
 }
+
+body.popup-open button[name^="NAV"] {
+	pointer-events:none;
+}
