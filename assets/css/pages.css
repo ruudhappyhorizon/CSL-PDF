@@ -1916,13 +1916,13 @@ body, #container-wrap { background:#ededed; }
 }
 
 body.popup-open button[name^="NAV"] {
-	pointer-events:none;
+	pointer-events:auto;
 }
 
 body.no-scroll {
-    overflow:hidden;
+    overflow:auto;
 }
 body.no-scroll #container-wrap {
-    position:fixed;
+    position:absolute;
     top:0; left:0; right:0; bottom:0;
 }
